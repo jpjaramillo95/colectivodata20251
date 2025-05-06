@@ -1,10 +1,13 @@
 import pandas as pd
 
-# usuariosDataFrame=pd.read_excel("./data/usuarios_sistema_completo.xlsx")
-# # print(usuariosDataFrame)
+usuariosDataFrame=pd.read_excel("./data/usuarios_sistema_completo.xlsx")
+# print(usuariosDataFrame)
 # print(usuariosDataFrame.isnull().sum())
 
 # Necesito solo un listado de aprendices o estudiantes
+# print(usuariosDataFrame["tipo_usuario"].unique()) #Muestra los valores que hay dentro de esa columna
+listaAprendicesOEstudiantes=usuariosDataFrame.query('tipo_usuario=="estudiante"')
+print(listaAprendicesOEstudiantes)
 
 # Necesito un listado de solo instructores o profesores
 
