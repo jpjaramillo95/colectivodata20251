@@ -13,6 +13,7 @@ plt.title("Cantidad de registros por estado")
 plt.xlabel("Estado")#Como quiero nombrar mi eje x
 plt.ylabel("Cantidad")#Como quiero nombrar mi eje y
 plt.tight_layout() #Ajustar a la figura
+# plt.savefig("C:/xampp/htdocs/clientedatos/src/assets/img/barras.png")
 plt.show() #imprimir
 
 #Gráfica de torta
